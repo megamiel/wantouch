@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "560933273193",
+    "project_id": "wantouch-project-175c8",
+    "storage_bucket": "wantouch-project-175c8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:560933273193:android:fd5a4b0f963f4313012cf8",
+        "android_client_info": {
+          "package_name": "com.example.wantouch_project"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "560933273193-bnb4cv3loekk4a1ohc013k6jqi061687.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBgtVGHJC_9YTBQsxtKHPvJn0Lz7Vqw_n0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "560933273193-bnb4cv3loekk4a1ohc013k6jqi061687.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
