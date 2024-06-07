@@ -14,6 +14,7 @@ import android.widget.TextView;
 
 import com.example.wantouch_project.forem.activitys.ForemActivity;
 import com.example.wantouch_project.forem.annotation.Writer;
+import com.example.wantouch_project.forem.drawable.Background;
 import com.example.wantouch_project.forem.ui.ForemComponent;
 import com.example.wantouch_project.forem.ui.ForemListView;
 import com.example.wantouch_project.forem.views.HorizontalLayout;
@@ -28,7 +29,12 @@ public class RoomListDisplayActivity extends ForemActivity {
     ForemComponent roomInfoComponent=args->{
         return this.<HorizontalLayout>create(() -> {
             layout(match_parent, 450);
-            backgroundResource(R.drawable.border_black);
+            new Background(){{
+                setStroke(1,Color.BLACK);
+            }};
+            onClick(()->{
+                startActivity(ChatRoomHostActivity.class);
+            });
         }).render(() -> {
             this.<ImageView>create(() -> {
                 layout(0, match_parent, 30);
@@ -89,4 +95,6 @@ public class RoomListDisplayActivity extends ForemActivity {
             });
         });
     }
+
+
 }

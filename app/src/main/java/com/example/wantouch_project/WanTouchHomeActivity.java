@@ -12,6 +12,7 @@ import androidx.appcompat.widget.AppCompatTextView;
 
 import com.example.wantouch_project.forem.activitys.ForemActivity;
 import com.example.wantouch_project.forem.annotation.Writer;
+import com.example.wantouch_project.forem.drawable.Background;
 import com.example.wantouch_project.forem.views.HorizontalLayout;
 import com.example.wantouch_project.forem.views.Root;
 import com.example.wantouch_project.forem.views.VerticalLayout;
@@ -34,7 +35,8 @@ public class WanTouchHomeActivity extends ForemActivity {
                 this.<ImageView>create(profileEditButton -> {
                     layout(0, match_parent, 15);
                     image(R.drawable.wantouch_logo_);
-                    backgroundResource(R.drawable.circle);
+//                    backgroundResource(R.drawable.circle);
+                    new CircleBorderBackground();
                     onClick(()-> {
                         startActivity(ProfileEditActivity.class);
                     });
@@ -79,7 +81,8 @@ public class WanTouchHomeActivity extends ForemActivity {
                     craftmincho();
                     text("さがす");
                     textSize(35);
-                    backgroundResource(R.drawable.radius);
+//                    backgroundResource(R.drawable.radius);
+                    new DefaultButtonBackground();
                     onClick(()->{
                         startActivity(RoomListDisplayActivity.class);
                     });
@@ -96,7 +99,8 @@ public class WanTouchHomeActivity extends ForemActivity {
                     craftmincho();
                     text("つくる");
                     textSize(35);
-                    backgroundResource(R.drawable.radius);
+//                    backgroundResource(R.drawable.radius);
+                    new DefaultButtonBackground();
                     onClick(()->{
                         startActivity(MakeRoomActivity.class);
                     });

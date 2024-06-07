@@ -60,9 +60,7 @@ public class AccountLoginActivity extends ForemActivity {
                 craftmincho();
                 text("ログイン");
                 textSize(30);
-//                backgroundColor(Color.rgb(0xFF, 0xA5, 0x00));
-                backgroundResource(R.drawable.radius);
-
+                new DefaultButtonBackground();
                 onClick(()->{
                      startActivity(WanTouchHomeActivity.class);
                 });

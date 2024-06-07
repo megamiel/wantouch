@@ -28,6 +28,7 @@
         <activity android:name=".MakeRoomActivity"/>
         <activity android:name=".ImagePickActivity"/>
         <activity android:name=".AccountLoginActivity"/>
+        <activity android:name=".ChatRoomHostActivity"/>
     </application>
 
 </manifest>

@@ -30,5 +30,7 @@ public class ImagePickActivity extends AppCompatActivity {
         if (requestCode == REQUEST_GALLERY && resultCode == RESULT_OK) {
 
         }
+
+        finish();
     }
 }

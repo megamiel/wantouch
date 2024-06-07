@@ -14,8 +14,6 @@ import com.example.wantouch_project.forem.views.VerticalLayout;
 
 import java.util.Calendar;
 
-
-
 @Writer("そうま")
 public class MakeRoomActivity extends ForemActivity {
 
@@ -32,9 +30,10 @@ public class MakeRoomActivity extends ForemActivity {
             this.<ImageView>create(dogIcon -> {
                 layout(0, match_parent, 30);
                 image(R.drawable.wantouch_logo_);
-                dogIcon.setBackgroundResource(R.drawable.circle);
+                new CircleBorderBackground();
                 onClick(() -> {
                     //アイコン変更に遷移したくて。
+                    startActivity(ImagePickActivity.class);
                 });
 
             });

@@ -1,15 +1,9 @@
 package com.example.wantouch_project;
 
 import android.graphics.Color;
-import android.webkit.WebSettings;
-import android.webkit.WebView;
-import android.webkit.WebViewClient;
-import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
-
-import androidx.appcompat.widget.AppCompatTextView;
 
 import com.example.wantouch_project.forem.activitys.ForemActivity;
 import com.example.wantouch_project.forem.annotation.Writer;
@@ -60,8 +54,7 @@ public class AccountCreateActivity extends ForemActivity {
                 craftmincho();
                 text("作成");
                 textSize(30);
-//                backgroundColor(Color.rgb(0xFF, 0xA5, 0x00));
-                backgroundResource(R.drawable.radius);
+                new DefaultButtonBackground();
                 onClick(() -> {
                     startActivity(WanTouchHomeActivity.class);
                 });
