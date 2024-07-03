@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
+
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -13,22 +17,45 @@
         android:theme="@style/Theme.Wantouch_project"
         tools:targetApi="31">
 
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCgBn_drw7CZsyeQ6jsRWYl-6d4HTg3PJk" />
+
+
+        <!--        <activity-->
+        <!--            android:name=".activitys.TestActivity"-->
+        <!--            android:exported="true">-->
+        <!--            <intent-filter>-->
+        <!--                <action android:name="android.intent.action.MAIN" />-->
+        <!--                <category android:name="android.intent.category.LAUNCHER" />-->
+        <!--            </intent-filter>-->
+        <!--        </activity>-->
+
+
         <activity
-            android:name=".AccountCreateActivity"
+            android:name=".activitys.AccountCreateActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".WanTouchHomeActivity"/>
-        <activity android:name=".ProfileEditActivity"/>
-        <activity android:name=".RoomListDisplayActivity"/>
-        <activity android:name=".MakeRoomActivity"/>
-        <activity android:name=".ImagePickActivity"/>
-        <activity android:name=".AccountLoginActivity"/>
-        <activity android:name=".ChatRoomHostActivity"/>
+
+
+        <activity android:name=".activitys.AccountLoginActivity" />
+        <activity android:name=".activitys.WanTouchHomeActivity"/>
+        <activity android:name=".activitys.ProfileEditActivity" />
+        <activity android:name=".activitys.RoomListActivity" />
+        <activity android:name=".activitys.MakeRoomActivity" />
+
+        <activity
+            android:name=".activitys.ChatRoomActivity"
+            android:windowSoftInputMode="adjustPan" />
     </application>
 
 </manifest>
+
+
+    <!--<activity android:name=".activitys.AccountCreateActivity" />-->
+    <!--            android:name=".activity.AccountCreateActivity"-->
+    <!--<activity android:name=".ChatRoomHostActivity"/>-->
